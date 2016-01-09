@@ -1,0 +1,48 @@
+<html>
+      <title>Tech Help</title>
+      <head>
+      <style>
+      .center {
+         margin: auto;
+         width: 60%;
+         border: 3px solid #73AD21;
+         padding: 10px;
+      }
+      </style>
+      </head>
+      
+      <body>
+      <style>
+      @keyframes rotation {
+        from { 
+            transform: rotate(0deg); 
+        } to { 
+            transform: rotate(360deg); 
+        }
+      }
+      #mainlogo {  
+      display: block;
+      position: absolute;
+      background-repeat: no-repeat; 
+      background-position: center center; 
+      background-color: green;
+      rotation-point:50% 50%;
+      left:40%;
+      top:30%;
+      }
+      body{
+        background-image: url("website_background.jpg");
+      }
+      </style>
+      <h1 onmouseover="new(this)">cheese</h1>
+      <img id="mainlogo" onmouseover="new(this)" src="logo.png">
+      <script>
+      function new(obj){
+        alert("cheese");
+          
+      }
+     </script>
+      </body>
+
+
+</html>
